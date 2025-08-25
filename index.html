@@ -18,14 +18,29 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Style CSS -->
     <link rel="stylesheet" href="style.css">
+
+
+    <!-- Tailwind Script -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bikePrimary: '#E76F51',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
     <!-- Header Section -->
-    <header>
+    <header class="md:container mx-auto">
         <nav>
             <div class="navbar bg-base-100 shadow-sm">
-                <div class="navbar-start">
+                <div class="flex-1">
+                    <!-- Mobile Dropdown Toggle -->
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -36,31 +51,36 @@
                         </div>
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li><a>Home</a></li>
-                            <li><a>Shop</a></li>
-                            <li><a>News</a></li>
-                            <li><a>Contact</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Contact</a></li>
                         </ul>
                     </div>
-                    <a class="btn-ghost text-xl">Biker Zone</a>
+                    <a class="btn-ghost text-2xl font-bold">Biker Zone</a>
                 </div>
+
+                <!-- Navbar Menu -->
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
-                        <li><a>Home</a></li>
-                        <li><a>Shop</a></li>
-                        <li><a>News</a></li>
-                        <li><a>Contact</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end">
-                    <a class="btn btn-error text-white">Login</a>
+                <!-- Login Button -->
+                <div>
+                    <button>
+                        <a class="bg-bikePrimary text-white px-7 py-2 rounded">Login</a>
+                    </button>
                 </div>
             </div>
         </nav>
     </header>
 
     <!-- Main Section -->
-    <main>
+    <main class="md:container mx-auto">
 
     </main>
 
