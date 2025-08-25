@@ -37,7 +37,7 @@
 
 <body>
     <!-- Header Section -->
-    <header class="md:container mx-auto">
+    <header class="md:container mx-auto mb-24">
         <nav>
             <div class="navbar bg-base-100 shadow-sm">
                 <div class="flex-1">
@@ -78,10 +78,6 @@
                 </div>
             </div>
         </nav>
-    </header>
-
-    <!-- Main Section -->
-    <main class="container mx-auto">
         <!-- Carousal Section -->
         <div class="carousel w-full bg-bikePrimaryBg lg:h-[550px]">
             <!-- Sart Slide 01 -->
@@ -156,8 +152,37 @@
             </div>
             <!-- End Slide 03 -->
         </div>
+    </header>
 
+    <!-- Main Section -->
+    <main class="container mx-auto">
+        <!-- Fetured Bike Section -->
+        <section class="mb-24">
+            <!-- title -->
+            <div class="text-center space-y-3">
+                <h2 class="text-3xl font-bold">Fetured Bikes In This Year</h2>
+                <p class="text-bikePrimary">Best bike collection</p>
+                <hr class="w-20 mx-auto mt-2 border-1 border-bikePrimary">
+            </div>
 
+            <!-- Bike Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Card 01 -->
+                <div class="flex justify-center">
+                    <img class="filter hue-rotate-90" src="images/others/feature-bike.png" alt="Bike01">
+                </div>
+                <!-- Card 02 -->
+                <div class="flex justify-center">
+                    <img class="" src="images/others/feature-bike.png" alt="Bike01">
+                </div>
+                <!-- Card 03 -->
+                <div class="flex justify-center">
+                    <img class="filter hue-rotate-90" src="images/others/feature-bike.png" alt="Bike01">
+                </div>
+            </div>
+        </section>
+
+        
     </main>
 
     <!-- footer Section -->
